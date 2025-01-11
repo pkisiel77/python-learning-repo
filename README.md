@@ -1,4 +1,4 @@
-[![Python Learning Repository Logo](images/plr-logo.png)
+![Python Learning Repository Logo](images/plr-logo.png)
 
 
 # Python Learning Repository
