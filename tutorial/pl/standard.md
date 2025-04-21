@@ -2,7 +2,7 @@
 - PEP 8
 - PEP 257
 
-W Pythonie można stosować wskazówki typów (type hints) zgodnie z zaleceniami PEP 484 oraz konwencjami PEP 8. To oznacza, że:
+W Pythonie można stosować wskazówki typów (type hints) zgodnie z zaleceniami ```PEP 484``` oraz konwencjami ```PEP 8```
 ## 1.	Typowanie zmiennych i parametrów:
 
 Deklarujesz typy parametrów funkcji oraz wartość zwracaną:
