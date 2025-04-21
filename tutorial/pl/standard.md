@@ -116,7 +116,7 @@ if __name__ == "__main__":
 - Zawiera docstrings dokumentujące funkcje
 - Używa pustych linii do oddzielenia logicznych sekcji kodu
 - Utrzymuje odpowiednie odstępy wokół operatorów
-- Używa nawiasów wokół przypisań w warunkach ```if```, aby zwiększyć czytelność
+- Używa nawiasów wokół przypisań w warunkach ```if``` , aby zwiększyć czytelność
 
 ## 3.	Zgodność z PEP 8:
 
