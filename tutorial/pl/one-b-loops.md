@@ -15,6 +15,8 @@ print(f'range_time={range_time:.3f}s')
 
 repeat_time = timeit(for_repeat, number=100)
 print(f'repeat_time={repeat_time:.3f}s')
+
+https://www.youtube.com/shorts/uKk837CLaPs
 ```
 
 ```py
