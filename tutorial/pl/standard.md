@@ -188,4 +188,4 @@ def multiply(a: int, b: int) -> int:
     return a * b
 ```
 
-Podsumowując, aby zapisać kod zgodny z najlepszymi praktykami i typowaniem, stosujesz się do powyższych zasad, dodajesz odpowiednie wskazówki typów, formatujesz kod zgodnie z PEP 8, a w razie potrzeby korzystasz z narzędzi takich jak mypy, aby zapewnić jego poprawność.
+Podsumowując, aby zapisać kod zgodny z najlepszymi praktykami i typowaniem, stosujesz się do powyższych zasad, dodajesz odpowiednie wskazówki typów, formatujesz kod zgodnie z ```PEP 8```, a w razie potrzeby korzystasz z narzędzi takich jak ```mypy```, aby zapewnić jego poprawność.
