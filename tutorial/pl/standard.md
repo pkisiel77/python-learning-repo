@@ -36,6 +36,88 @@ Używasz czytelnych nazw funkcji i zmiennych (np. calculate_average, a nie calc_
 
 Rozbijasz kod na mniejsze funkcje, jeśli jedna zaczyna robić zbyt wiele.
 
+```py
+def calculate_average(numbers):
+    """
+    Oblicza średnią arytmetyczną listy liczb.
+    
+    Args:
+        numbers: Lista liczb do obliczenia średniej
+        
+    Returns:
+        Średnia arytmetyczna lub None, jeśli lista jest pusta
+    """
+    if not numbers:
+        return None
+    
+    total = sum(numbers)
+    count = len(numbers)
+    return total / count
+
+
+def analyze_student_scores(scores, passing_threshold=60):
+    """
+    Analizuje wyniki uczniów i zwraca statystyki.
+    
+    Args:
+        scores: Słownik z nazwiskami uczniów jako kluczami i ich wynikami jako wartościami
+        passing_threshold: Próg zaliczenia (domyślnie 60)
+        
+    Returns:
+        Słownik zawierający statystyki wyników
+    """
+    if not scores:
+        return {
+            "average": None,
+            "passing_count": 0,
+            "failing_count": 0,
+            "highest_score": None,
+            "lowest_score": None
+        }
+    
+    all_scores = list(scores.values())
+    passing_students = [name for name, score in scores.items() if score >= passing_threshold]
+    failing_students = [name for name, score in scores.items() if score < passing_threshold]
+    
+    statistics = {
+        "average": calculate_average(all_scores),
+        "passing_count": len(passing_students),
+        "failing_count": len(failing_students),
+        "highest_score": max(all_scores),
+        "lowest_score": min(all_scores)
+    }
+    
+    return statistics
+
+
+# Przykład użycia
+if __name__ == "__main__":
+    student_scores = {
+        "Kowalski": 85,
+        "Nowak": 92,
+        "Wiśniewski": 45,
+        "Wójcik": 78,
+        "Kowalczyk": 59
+    }
+    
+    results = analyze_student_scores(student_scores)
+    print(f"Średnia wyników: {results['average']}")
+    print(f"Liczba uczniów, którzy zaliczyli: {results['passing_count']}")
+    print(f"Liczba uczniów, którzy nie zaliczyli: {results['failing_count']}")
+    print(f"Najwyższy wynik: {results['highest_score']}")
+    print(f"Najniższy wynik: {results['lowest_score']}")
+```
+
+### Ten kod stosuje się do następujących zasad z PEP 8:
+
+- Używa 4 spacji na poziom wcięcia (nie tabulatorów)
+- Stosuje czytelne nazwy funkcji i zmiennych (np. calculate_average, analyze_student_scores)
+- Rozbija logikę na mniejsze, dedykowane funkcje
+- Zawiera docstrings dokumentujące funkcje
+- Używa pustych linii do oddzielenia logicznych sekcji kodu
+- Utrzymuje odpowiednie odstępy wokół operatorów
+- Używa nawiasów wokół przypisań w warunkach if, aby zwiększyć czytelność
+
 ## 3.	Zgodność z PEP 8:
 
 PEP 8 to oficjalny zbiór wytycznych dotyczących formatowania kodu Pythona.
