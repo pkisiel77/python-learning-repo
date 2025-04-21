@@ -3,7 +3,7 @@
 - PEP 257
 
 W Pythonie można stosować wskazówki typów (type hints) zgodnie z zaleceniami PEP 484 oraz konwencjami PEP 8. To oznacza, że:
-1.	Typowanie zmiennych i parametrów:
+## 1.	Typowanie zmiennych i parametrów:
 
 Deklarujesz typy parametrów funkcji oraz wartość zwracaną:
 
@@ -28,7 +28,7 @@ def get_even_numbers(numbers: List[int]) -> List[int]:
     return [num for num in numbers if num % 2 == 0]
 ```
 
-2.	Zachowanie czytelności kodu:
+## 2.	Zachowanie czytelności kodu:
 
 Stosujesz odpowiednie wcięcia (4 spacje na poziom).
 
@@ -36,7 +36,7 @@ Używasz czytelnych nazw funkcji i zmiennych (np. calculate_average, a nie calc_
 
 Rozbijasz kod na mniejsze funkcje, jeśli jedna zaczyna robić zbyt wiele.
 
-3.	Zgodność z PEP 8:
+## 3.	Zgodność z PEP 8:
 
 PEP 8 to oficjalny zbiór wytycznych dotyczących formatowania kodu Pythona.
 
@@ -58,7 +58,7 @@ if value is None:
     ...
 ```
 
-4. Dodawanie typów do bardziej złożonych struktur danych:
+## 4. Dodawanie typów do bardziej złożonych struktur danych:
 
 Przy listach zawierających różne typy:
 
@@ -76,7 +76,7 @@ from typing import Dict
 settings: Dict[str, int] = {"width": 800, "height": 600}
 ```
 
-5. Stosowanie statycznych narzędzi do sprawdzania zgodności z typami:
+## 5. Stosowanie statycznych narzędzi do sprawdzania zgodności z typami:
 
 Możesz używać narzędzi takich jak mypy, które analizują kod pod kątem zgodności z adnotacjami typów.
 
@@ -89,7 +89,7 @@ mypy your_script.py
 
 Pomoże upewnić się, że typowanie jest prawidłowe.
 
-6. Dodawanie docstringów (zgodnie z PEP 257):
+## 6. Dodawanie docstringów (zgodnie z PEP 257):
 
 Dodajesz krótkie opisy funkcji i klas, aby kod był bardziej zrozumiały:
 
