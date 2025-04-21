@@ -111,12 +111,12 @@ if __name__ == "__main__":
 ### Ten kod stosuje się do następujących zasad z PEP 8:
 
 - Używa 4 spacji na poziom wcięcia (nie tabulatorów)
-- Stosuje czytelne nazwy funkcji i zmiennych (np. calculate_average, analyze_student_scores)
+- Stosuje czytelne nazwy funkcji i zmiennych (np. ```calculate_average```, ```analyze_student_scores```)
 - Rozbija logikę na mniejsze, dedykowane funkcje
 - Zawiera docstrings dokumentujące funkcje
 - Używa pustych linii do oddzielenia logicznych sekcji kodu
 - Utrzymuje odpowiednie odstępy wokół operatorów
-- Używa nawiasów wokół przypisań w warunkach if, aby zwiększyć czytelność
+- Używa nawiasów wokół przypisań w warunkach ```if```, aby zwiększyć czytelność
 
 ## 3.	Zgodność z PEP 8:
 
