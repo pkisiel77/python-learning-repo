@@ -32,7 +32,7 @@ def get_even_numbers(numbers: List[int]) -> List[int]:
 
 Stosujesz odpowiednie wcięcia (4 spacje na poziom).
 
-Używasz czytelnych nazw funkcji i zmiennych (np. calculate_average, a nie calc_avg).
+Używasz czytelnych nazw funkcji i zmiennych (np. ```calculate_average```, a nie ```calc_avg```).
 
 Rozbijasz kod na mniejsze funkcje, jeśli jedna zaczyna robić zbyt wiele.
 
