@@ -36,6 +36,28 @@ Używasz czytelnych nazw funkcji i zmiennych (np. calculate_average, a nie calc_
 
 Rozbijasz kod na mniejsze funkcje, jeśli jedna zaczyna robić zbyt wiele.
 
+## 3.	Zgodność z PEP 8:
+
+PEP 8 to oficjalny zbiór wytycznych dotyczących formatowania kodu Pythona.
+
+W skrócie:
+- Linijki mają do 79 znaków.
+- Jedna pusta linia pomiędzy definicjami funkcji.
+- Dwie puste linie pomiędzy definicjami klas.
+- Używanie spacji wokół operatorów:
+
+```py
+result = x + y
+```
+
+
+Używanie czytelnych konstrukcji warunkowych:
+
+```py
+if value is None:
+    ...
+```
+
 ```py
 def calculate_average(numbers):
     """
@@ -118,27 +140,6 @@ if __name__ == "__main__":
 - Utrzymuje odpowiednie odstępy wokół operatorów
 - Używa nawiasów wokół przypisań w warunkach ```if``` , aby zwiększyć czytelność
 
-## 3.	Zgodność z PEP 8:
-
-PEP 8 to oficjalny zbiór wytycznych dotyczących formatowania kodu Pythona.
-
-W skrócie:
-- Linijki mają do 79 znaków.
-- Jedna pusta linia pomiędzy definicjami funkcji.
-- Dwie puste linie pomiędzy definicjami klas.
-- Używanie spacji wokół operatorów:
-
-```py
-result = x + y
-```
-
-
-Używanie czytelnych konstrukcji warunkowych:
-
-```py
-if value is None:
-    ...
-```
 
 ## 4. Dodawanie typów do bardziej złożonych struktur danych:
 
